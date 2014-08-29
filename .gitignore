@@ -1,3 +1,5 @@
+.DS_Store
+
 # Compiled Object files
 *.slo
 *.lo
@@ -19,3 +21,17 @@
 *.exe
 *.out
 *.app
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+# Vim generated files 
+*~
+*.swp
+*.swo
+.ycm_extra_conf.py
+.ycm_extra_conf.pyc
