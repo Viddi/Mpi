@@ -7,7 +7,7 @@ Project for Computer Science Research class.
 
 *Download latest version of MPICH [here](http://mpich.org/downloads/).*
 
-** Compiling MPICH 3.1.2 **
+**Compiling MPICH 3.1.2**
 
 1. cd /path/to/project && mkdir tmp && cd tmp
 2. /path/to/mpich-3.1.2/configure --prefix=/path/to/project/lib/mpich --disable-fortran 2>&1 | tee c.txt
@@ -17,7 +17,7 @@ Project for Computer Science Research class.
 
 *This installation guide was referenced from [here](http://mpich.org/static/downloads/3.1.2/mpich-3.1.2-installguide.pdf).*
 
-** Building Project **
+**Building Project**
 
 1. cd /path/to/project
 2. mkdir build && mkdir build/debug
