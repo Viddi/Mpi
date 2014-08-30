@@ -1,4 +1,4 @@
-prefix=/Users/Viddi/Documents/CS421/Mpi/lib/mpi
+prefix=/Users/Viddi/Documents/CS421/Mpi/lib/mpich
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

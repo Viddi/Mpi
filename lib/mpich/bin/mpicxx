@@ -26,11 +26,11 @@
 # Set the default values of all variables.
 #
 # Directory locations: Fixed for any MPI implementation
-prefix=/Users/Viddi/Documents/CS421/Mpi/lib/mpi
-exec_prefix=/Users/Viddi/Documents/CS421/Mpi/lib/mpi
-sysconfdir=/Users/Viddi/Documents/CS421/Mpi/lib/mpi/etc
-includedir=/Users/Viddi/Documents/CS421/Mpi/lib/mpi/include
-libdir=/Users/Viddi/Documents/CS421/Mpi/lib/mpi/lib
+prefix=/Users/Viddi/Documents/CS421/Mpi/lib/mpich
+exec_prefix=/Users/Viddi/Documents/CS421/Mpi/lib/mpich
+sysconfdir=/Users/Viddi/Documents/CS421/Mpi/lib/mpich/etc
+includedir=/Users/Viddi/Documents/CS421/Mpi/lib/mpich/include
+libdir=/Users/Viddi/Documents/CS421/Mpi/lib/mpich/lib
 
 # Default settings for compiler, flags, and libraries
 CXX="g++"
@@ -257,14 +257,14 @@ if [ "$linking" = yes ] ; then
     fi
 
     if [ "$nativelinking" = yes ] ; then
-        $Show $CXX $PROFILE_INCPATHS      -Wl,-flat_namespace "${allargs[@]}" -I$includedir
+        $Show $CXX $PROFILE_INCPATHS -std=c++11     -Wl,-flat_namespace "${allargs[@]}" -I$includedir
         rc=$?
     else
-        $Show $CXX $PROFILE_INCPATHS      -Wl,-flat_namespace "${allargs[@]}" -I$includedir -L$libdir $cxxlibs $PROFILE_PRELIB $PROFILE_FOO $rpath_flags -lmpi -lpmpi $PROFILE_POSTLIB  -lpthread  
+        $Show $CXX $PROFILE_INCPATHS -std=c++11     -Wl,-flat_namespace "${allargs[@]}" -I$includedir -L$libdir $cxxlibs $PROFILE_PRELIB $PROFILE_FOO $rpath_flags -lmpi -lpmpi $PROFILE_POSTLIB  -lpthread  
         rc=$?
     fi
 else
-    $Show $CXX $PROFILE_INCPATHS   "${allargs[@]}" -I$includedir
+    $Show $CXX $PROFILE_INCPATHS -std=c++11  "${allargs[@]}" -I$includedir
     rc=$?
 fi
 

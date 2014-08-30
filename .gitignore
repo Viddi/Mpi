@@ -35,3 +35,6 @@ install_manifest.txt
 *.swo
 .ycm_extra_conf.py
 .ycm_extra_conf.pyc
+
+# Project files
+build/

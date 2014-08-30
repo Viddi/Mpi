@@ -1,5 +1,5 @@
 # this gives access to the mpich header files
-prefix=/Users/Viddi/Documents/CS421/Mpi/lib/mpi
+prefix=/Users/Viddi/Documents/CS421/Mpi/lib/mpich
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
@@ -15,6 +15,6 @@ Cflags:     -I${includedir}
 # pkg-config does not understand Cxxflags, etc. So we allow users to
 # query them using the --variable option
 
-cxxflags=    -I${includedir}
+cxxflags=  -std=c++11  -I${includedir}
 fflags=  -I${includedir}
 fcflags=  -I${includedir}
