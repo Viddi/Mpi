@@ -27,3 +27,9 @@ Project for Computer Science Research class.
 5. `./Mpi_d`
 
 **NOTE: This guide is for Linux/OS X only.**
+
+#### Pi Node Setup
+
+1. After booting it up, check Raspbian and install it. The Pi will reboot automatically
+2. Select advanced options and change the hostname to 'pi_n'
+3. Click finish
