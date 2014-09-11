@@ -24,8 +24,8 @@ Project for Computer Science Research class.
 *NOTE: Before being able to build the project, you need to make sure you have C++ 11 set up.*
 
 1. `cd /path/to/project/src`
-2. `mpicxx main.cc` (A PATH variable needs to be set in your .bashrc file to point to /path/to/project/lib/mpich/bin)
-3. `mpiexec ./a.out`
+2. `mpicxx -o nova main.cc`
+3. `mpiexec ./nova`
 
 ### Pi Node Setup
 
