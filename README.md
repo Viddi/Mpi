@@ -29,4 +29,22 @@ Project for Computer Science Research class.
 
 ### Pi Node Setup
 
-Set up steps and a download link to a .img file with a pre-configured OS will be available soon.
+To set up static IP address for each node, replace everything in the interfaces file with the contents below. You will have to change the values to fit your own network.
+
+`sudo vi /etc/network/interfaces`
+
+```
+auto lo eth0
+iface lo inet loopback
+iface eth0 inet static
+        address 10.10.53.101
+        netmask 255.255.0.0
+        gateway 10.10.0.254
+        dns-nameservers 10.90.0.50 10.90.0.48
+```
+---
+
+### TODO
+* Write a script to update project on all nodes, from master.
+* Set up steps and a download link to a .img file with a pre-configured Raspbian OS will be available soon.
+
