@@ -29,7 +29,7 @@ Project for Computer Science Research class.
 
 ### Pi Node Setup
 
-To set up static IP address for each node, replace everything in the interfaces file with the contents below. You will have to change the values to fit your own network.
+To set up static IP address for each node, replace everything in the *interfaces* file with the contents below. You will have to change the values to fit your own network. As for our cluster, just changing the XX values with the number of the Pi node will be enough.
 
 `sudo vi /etc/network/interfaces`
 
@@ -37,11 +37,20 @@ To set up static IP address for each node, replace everything in the interfaces 
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
-        address 10.10.53.101
+        address 10.10.53.1XX
         netmask 255.255.0.0
         gateway 10.10.0.254
         dns-nameservers 10.90.0.50 10.90.0.48
 ```
+
+It's probably a safe bet to reboot the Pi after doing these configurations. Next you will have to generate a new ssh key to allow the master node to communicate with the current node, freely.
+
+1. `ssh-keygen` Overwrite the existing one if it asks for it. Otherwise, just press enter for every prompt it asks.
+2. `cd ~/.ssh`
+3. `cp id_rsa.pub pi-N` Replace N with the number for the Pi node.
+4. Copy the pi-00 file to the ~/.ssh/ directory.
+5. `cat pi-00 >> authorized_keys`
+
 ---
 
 ### TODO
