@@ -51,6 +51,13 @@ It's probably a safe bet to reboot the Pi after doing these configurations. Next
 4. Copy the pi-00 file to the ~/.ssh/ directory.
 5. `cat pi-00 >> authorized_keys`
 
+Compiling the test prime program:
+
+1. `cd /path/to/project/src`
+2. `mpicxx -o prime prime_mpi.cpp`
+3. `mpiexec ./prime` Run it to check if it compiled correctly.
+
+
 ---
 
 ### TODO
