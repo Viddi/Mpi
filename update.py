@@ -12,5 +12,3 @@ os.system('mv Mpi-Master Mpi')
 
 # Clean up
 os.system('rm -rf master.zip')
-
-# TOOD: Update library files (exclude binaries)
