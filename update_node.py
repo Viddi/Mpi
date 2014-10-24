@@ -8,7 +8,7 @@ nodes = f.readlines()
 f.close
 
 for node in nodes:
-    if node != '10.10.1.236'
+    if node != '10.10.1.236':
         os.system('ssh pi@' + node + ' mv ~/Development/Mpi/lib ~/Development/')
         os.system('ssh pi@' + node + ' rm -rf ~/Development/Mpi')
         os.system('scp -r Mpi/ pi@' + node + ':/home/pi/Development')

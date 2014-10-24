@@ -3,9 +3,9 @@
 import os
 import sys
 
-os.system('wget https://github.com/Viddi/Mpi/archive/master.zip')
+os.system('wget -O latest.zip https://github.com/Viddi/Mpi/archive/master.zip')
 
-if os.path.exists('Mpi-master.zip')
+if os.path.exists('latest.zip'):
     os.system('unzip master.zip')
     os.system('rm -rf Mpi-master/lib/mpich')
     os.system('cp -rf Mpi/lib/* Mpi-master/lib')
