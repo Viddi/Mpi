@@ -3,9 +3,7 @@
 import os
 import sys
 
-f = open('~/Development/Mpi/machinefile', 'r')
-nodes = f.readlines()
-f.close
+nodes = (node.rstrip('\n') for node in open('/home/pi/Development/Mpi/machinefile'))
 
 for node in nodes:
     if node != '10.10.1.236':
