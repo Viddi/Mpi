@@ -61,6 +61,6 @@ Compiling the test prime program:
 ---
 
 ### TODO
-* Write a script to update project on all nodes, from master.
+* ~~Write a script to update project on all nodes, from master.~~
 * Set up steps and a download link to a .img file with a pre-configured Raspbian OS will be available soon.
 

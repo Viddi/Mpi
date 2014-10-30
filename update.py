@@ -3,7 +3,7 @@
 import os
 import sys
 
-os.system('wget -O latest.zip https://github.com/Viddi/Mpi/archive/latest.zip')
+os.system('wget -O latest.zip https://github.com/Viddi/Mpi/archive/master.zip')
 
 if os.path.exists('latest.zip'):
     os.system('unzip latest.zip')
