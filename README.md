@@ -3,6 +3,8 @@ Mpi
 
 Project for Computer Science Research class.
 
+![](https://pbs.twimg.com/media/B1Se3KeCEAA_iiE.jpg)
+
 ## Installation Guide
 
 **NOTE: This guide is for Linux/OS X only.**
