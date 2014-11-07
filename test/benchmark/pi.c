@@ -1,2 +1,0 @@
-<script>window.googleJavaScriptRedirect=1</script><script>var m={navigateTo:function(b,a,d){if(b!=a&&b.google){if(b.google.r){b.google.r=0;b.location.href=d;a.location.replace("about:blank");}}else{a.location.replace(d);}}};m.navigateTo(window.parent,window,"https://computing.llnl.gov/tutorials/mpi/samples/C/mpi_pi_reduce.c");
-</script><noscript><META http-equiv="refresh" content="0;URL='https://computing.llnl.gov/tutorials/mpi/samples/C/mpi_pi_reduce.c'"></noscript>
