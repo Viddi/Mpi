@@ -14,3 +14,5 @@ if os.path.exists('latest.zip'):
     
     # Clean up
     os.system('rm -rf latest.zip')
+else:
+    print "Failed to download from the repository"

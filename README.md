@@ -31,6 +31,8 @@ Project for Computer Science Research class.
 
 ### Pi Node Setup
 
+*More thorough guide is [here](http://viddi.is/project-mpi-part-2/).*
+
 To set up static IP address for each node, replace everything in the *interfaces* file with the contents below. You will have to change the values to fit your own network. As for our cluster, just changing the XX values with the number of the Pi node will be enough.
 
 `sudo vi /etc/network/interfaces`
